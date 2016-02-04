@@ -107,6 +107,7 @@ SWIFT_CLASS("_TtC16retro_calculator11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class AVAudioPlayer;
 @class UIButton;
 @class UILabel;
 @class NSBundle;
@@ -115,8 +116,19 @@ SWIFT_CLASS("_TtC16retro_calculator11AppDelegate")
 SWIFT_CLASS("_TtC16retro_calculator14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified outputLbl;
-- (IBAction)numberPressed:(UIButton * __nonnull)btn;
+@property (nonatomic, strong) AVAudioPlayer * __null_unspecified btnSound;
+@property (nonatomic, copy) NSString * __nonnull runningNumber;
+@property (nonatomic, copy) NSString * __nonnull leftValStr;
+@property (nonatomic, copy) NSString * __nonnull rightValStr;
+@property (nonatomic, copy) NSString * __nonnull result;
 - (void)viewDidLoad;
+- (IBAction)numberPressed:(UIButton * __nonnull)btn;
+- (IBAction)onDividePressed:(id __nonnull)sender;
+- (IBAction)onMultiplyPressed:(id __nonnull)sender;
+- (IBAction)onSubtractPressed:(id __nonnull)sender;
+- (IBAction)onAddPressed:(id __nonnull)sender;
+- (IBAction)onEqualPressed:(id __nonnull)sender;
+- (void)playSound;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

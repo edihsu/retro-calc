@@ -189,6 +189,9 @@
                                                     <constraint firstAttribute="height" constant="63" id="IhI-BV-6A7"/>
                                                 </constraints>
                                                 <state key="normal" image="divide"/>
+                                                <connections>
+                                                    <action selector="onDividePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Pv-MY-L9l"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0E-gY-idg">
                                                 <rect key="frame" x="152" y="0.0" width="61" height="63"/>
@@ -197,6 +200,9 @@
                                                     <constraint firstAttribute="height" constant="63" id="Rvy-oG-PXF"/>
                                                 </constraints>
                                                 <state key="normal" image="multiply"/>
+                                                <connections>
+                                                    <action selector="onMultiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nik-GO-BmQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -210,6 +216,9 @@
                                                     <constraint firstAttribute="height" constant="63" id="Pn8-F9-mWN"/>
                                                 </constraints>
                                                 <state key="normal" image="subtract"/>
+                                                <connections>
+                                                    <action selector="onSubtractPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T3s-31-qAO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4R-e4-Ysp">
                                                 <rect key="frame" x="76" y="0.0" width="61" height="63"/>
@@ -218,6 +227,9 @@
                                                     <constraint firstAttribute="height" constant="63" id="GI8-dn-zjQ"/>
                                                 </constraints>
                                                 <state key="normal" image="add"/>
+                                                <connections>
+                                                    <action selector="onAddPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WRz-9a-gED"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFw-EV-121">
                                                 <rect key="frame" x="152" y="0.0" width="61" height="63"/>
@@ -226,12 +238,15 @@
                                                     <constraint firstAttribute="height" constant="63" id="XNO-3O-vs2"/>
                                                 </constraints>
                                                 <state key="normal" image="equal"/>
+                                                <connections>
+                                                    <action selector="onEqualPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLQ-j9-hnj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4556.6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgE-Xm-BsQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgE-Xm-BsQ">
                                 <rect key="frame" x="215" y="84" width="200" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="COZ-FT-ZYs"/>
@@ -249,9 +264,9 @@
                             <constraint firstAttribute="trailing" secondItem="7zl-LE-0hV" secondAttribute="trailing" id="ARm-n6-woQ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PxF-xX-o11" secondAttribute="bottom" id="Aac-Mf-vzb"/>
                             <constraint firstItem="7zl-LE-0hV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ay9-wD-yjC"/>
-                            <constraint firstItem="KgE-Xm-BsQ" firstAttribute="top" secondItem="FCx-x0-Tbd" secondAttribute="top" constant="18" id="FSR-Xy-0Hh"/>
+                            <constraint firstItem="KgE-Xm-BsQ" firstAttribute="top" secondItem="FCx-x0-Tbd" secondAttribute="top" constant="19" id="FSR-Xy-0Hh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7zl-LE-0hV" secondAttribute="bottom" id="Mtz-9y-N6N"/>
-                            <constraint firstItem="FCx-x0-Tbd" firstAttribute="trailing" secondItem="KgE-Xm-BsQ" secondAttribute="trailing" constant="10" id="SOe-1J-4Tg"/>
+                            <constraint firstItem="FCx-x0-Tbd" firstAttribute="trailing" secondItem="KgE-Xm-BsQ" secondAttribute="trailing" constant="18" id="SOe-1J-4Tg"/>
                             <constraint firstItem="PxF-xX-o11" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TQb-M7-G8F"/>
                             <constraint firstItem="IhL-Mz-lwH" firstAttribute="centerX" secondItem="FCx-x0-Tbd" secondAttribute="centerX" id="WJP-wa-Kbu"/>
                             <constraint firstItem="FCx-x0-Tbd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kBD-Bh-TPQ"/>
@@ -259,6 +274,9 @@
                             <constraint firstItem="PxF-xX-o11" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yOE-9X-3up"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLbl" destination="KgE-Xm-BsQ" id="j1C-YG-gIo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
