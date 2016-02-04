@@ -12,6 +12,7 @@
 		CEB4D38C1C61E05A0088DB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB4D38A1C61E05A0088DB0A /* Main.storyboard */; };
 		CEB4D38E1C61E05A0088DB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB4D38D1C61E05A0088DB0A /* Assets.xcassets */; };
 		CEB4D3911C61E05A0088DB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB4D38F1C61E05A0088DB0A /* LaunchScreen.storyboard */; };
+		CEB4D3991C62CAD00088DB0A /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEB4D3981C62CAD00088DB0A /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CEB4D38D1C61E05A0088DB0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB4D3901C61E05A0088DB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB4D3921C61E05A0088DB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB4D3981C62CAD00088DB0A /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		CEB4D3851C61E05A0088DB0A /* retro-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CEB4D3981C62CAD00088DB0A /* Minecraft.ttf */,
 				CEB4D3861C61E05A0088DB0A /* AppDelegate.swift */,
 				CEB4D3881C61E05A0088DB0A /* ViewController.swift */,
 				CEB4D38A1C61E05A0088DB0A /* Main.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					CEB4D3821C61E05A0088DB0A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = M6284KAVTJ;
 					};
 				};
 			};
@@ -124,6 +128,7 @@
 			files = (
 				CEB4D3911C61E05A0088DB0A /* LaunchScreen.storyboard in Resources */,
 				CEB4D38E1C61E05A0088DB0A /* Assets.xcassets in Resources */,
+				CEB4D3991C62CAD00088DB0A /* Minecraft.ttf in Resources */,
 				CEB4D38C1C61E05A0088DB0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "retro-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "projects.edihsu.retro-calculator";
@@ -260,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "retro-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "projects.edihsu.retro-calculator";
